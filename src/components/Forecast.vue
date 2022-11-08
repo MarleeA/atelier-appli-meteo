@@ -53,8 +53,6 @@ export default {
 p:first-child {
   margin: 0;
   padding: 1rem;
-  background-color: #747474;
-  color: white;
 }
 img {
   width: 100px;
@@ -67,6 +65,7 @@ img {
 }
 .infos {
   display: flex;
+  border-left: 1px solid black;
 }
 p,
 h4 {
@@ -77,13 +76,13 @@ h4 {
   margin-bottom: 0.75rem;
   border-bottom: 1px solid black;
 }
+
 div:first-child {
   padding-right: 0.5rem;
   border-right: 1px solid black;
-  border-left: 1px solid black;
- 
 }
 div:last-child {
   padding-left: 0.5rem;
+  
 }
 </style>
