@@ -43,16 +43,20 @@ export default {
 .meteoCard {
   margin: 15px;
   border: 1px solid black;
+  border-radius: 3%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  justify-content: center;
   height: fit-content;
   
 }
 p:first-child {
   margin: 0;
   padding: 1rem;
+  
 }
 img {
   width: 100px;
@@ -66,10 +70,12 @@ img {
 .infos {
   display: flex;
   border-left: 1px solid black;
+
 }
 p,
 h4 {
   margin: 0;
+  
 }
 h4 {
   box-sizing: border-box;

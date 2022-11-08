@@ -46,7 +46,7 @@ const data = await res.json();
 
 <template>
   <header>
-    <h1>La météo de Marseille</h1>
+    <img src="@/assets/marseille3.png" id="logo" alt="">
   </header>
 
   <main>
@@ -81,6 +81,13 @@ header,footer{
     padding: 0 1rem;
     background-color: rgb(106, 182, 198);
     color: white;
+    
+}
+
+
+#logo{
+  width: 300px;
+
 }
 main {
   width: 100%;
