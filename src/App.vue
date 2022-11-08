@@ -14,6 +14,7 @@ const apiKey = "f354617bca59ded0ad175d1fb6426bc7";
 export default {
   data () {
     return{
+      datetime:"",
       city:"",
       tempMax:"",
       tempMin:"",
@@ -58,7 +59,13 @@ this.icon= json.weather[0].icon
   </header>
 
   <div>
-   <Forecast :city= this.city :tempMax= this.tempMax :tempMin= this.tempMin :vitVent= this.vitVent :description= this.description :icon= this.icon /> 
+   <Forecast 
+   :city= this.city 
+   :tempMax= this.tempMax 
+   :tempMin= this.tempMin 
+   :vitVent= this.vitVent 
+   :description= this.description 
+   :icon= this.icon /> 
   </div>
  
 </template>

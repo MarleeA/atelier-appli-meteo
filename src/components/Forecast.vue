@@ -1,6 +1,6 @@
 <script>
 export default {
-  props: ['city','tempMax', 'tempMin', 'vitVent', 'description','icon'],
+  props: ['datetime','city','tempMax', 'tempMin', 'vitVent', 'description','icon'],
 };
 </script>
 
@@ -9,10 +9,17 @@ export default {
     <h1>{{city}}</h1>
     <img :src="`http://openweathermap.org/img/wn/${icon}@2x.png`" alt="">
     <h2>{{description}}</h2>
-    <p>Date: {{ }}</p>
-    <p>Température min: {{tempMin}}°C</p>
-    <p>Température max: {{tempMax}}°C</p>
-    <p>Vitesse du vent: {{vitVent}}</p>
+    <p>{{ datetime}}</p>
+    <div>
+      <h4>Températures</h4>
+      <p>Min: {{tempMin}}°C</p>
+      <p>Max: {{tempMax}}°C</p>
+
+      <div>
+        <h4>Vitesse du vent</h4>
+        <p>{{vitVent}}km/h</p>
+      </div>
+    </div>
     
   </div>
 </template>
