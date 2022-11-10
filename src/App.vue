@@ -72,7 +72,7 @@ const data = await res.json();
 
 header,footer{
 
-  height: 5rem;
+  height: 8rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -84,9 +84,8 @@ header,footer{
     
 }
 
-
 #logo{
-  width: 300px;
+  width: 400px;
 
 }
 main {

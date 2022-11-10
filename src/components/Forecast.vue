@@ -21,12 +21,12 @@ export default {
     <p>{{ datetime }}</p>
     <div>
       <div class="infos">
-        <div>
+        <div class="temp-container">
           <h4>Températures</h4>
           <p>Min: {{ tempMin }}°C</p>
           <p>Max: {{ tempMax }}°C</p>
         </div>
-        <div>
+        <div class="wind-container">
           <h4>Vitesse du vent</h4>
           <p>{{ vitVent }}km/h</p>
         </div>
@@ -40,9 +40,19 @@ export default {
 
 <style scoped>
 
+.temp-container{
+border-left: 1px solid black;
+padding-left: 3px;
+}
+.wind-container{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding-right: 4px;
+}
+
 .meteoCard {
   margin: 15px;
-  border: 1px solid black;
+  border: none;
   border-radius: 3%;
   padding: 1rem;
   display: flex;
@@ -50,27 +60,24 @@ export default {
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: fit-content;
+  height:350px;
+  padding-top: 0px;
+  box-shadow: 4px 4px 4px  rgb(212, 211, 211);
   
 }
-p:first-child {
-  margin: 0;
-  padding: 1rem;
-  
-}
+
 img {
-  width: 100px;
-  height: 100px;
+ 
+  width: 150px;
+  height: 150px;
   margin-left: 50px;
-}
-img {
-  width: 100px;
-  height: 100px;
 }
 .infos {
   display: flex;
-  border-left: 1px solid black;
 
+}
+h2{
+  margin-top: 0px;
 }
 p,
 h4 {
@@ -85,7 +92,7 @@ h4 {
 
 div:first-child {
   padding-right: 0.5rem;
-  border-right: 1px solid black;
+
 }
 div:last-child {
   padding-left: 0.5rem;
